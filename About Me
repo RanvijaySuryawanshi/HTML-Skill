@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My First Web Page</title>
+</head>
+<body>
+
+    <!-- 1. Heading and Paragraph -->
+    <h1>Welcome to My Web Page</h1>
+    <p>This is a basic webpage created using HTML. Here, I demonstrate Headings, Paragraphs, Lists, Tables, Links, Images, Audio, and Video.</p>
+
+    <!-- 2. Table -->
+    <h2>My Favorite Subjects</h2>
+    <table border="1">
+        <tr>
+            <th>Subject</th>
+            <th>Grade</th>
+        </tr>
+        <tr>
+            <td>Mathematics</td>
+            <td>A</td>
+        </tr>
+        <tr>
+            <td>Science</td>
+            <td>A+</td>
+        </tr>
+    </table>
+
+    <!-- 3. List -->
+    <h2>My Hobbies</h2>
+    <ul>
+        <li>Watching Anime</li>
+        <li>Coding</li>
+        <li>Playing Guitar</li>
+        <li>Playing Games(Both Sports and E-Sports)</li>
+    </ul>
+
+    <!-- 4. Links -->
+    <h2>Best Link To Watch Anime. </h2>
+    <p>Visit <a href="https://hianime.pe/" target="_blank">HiAnime</a> To Watch Anime.</p>
+
+    <!-- 5. Image -->
+    <h2>My Favorite Anime</h2>
+    <td><img src="demonslayer-900x839.jpg" alt="Demon" width="300"><td>
+    <p>Demon Slayer: Kimetsu no Yaiba Entertainment District Arc, also known as Demon Slayer: Kimetsu no Yaiba - Yūkaku-hen in Japanese.<p>
+    <h2>My Favorite Game</h2>
+    <td><img src="suke-valorant-launch-key-art-4_r.jpg" alt="Valorant" width="300"><td>
+    <p>Valorant.<p>
+    <!-- 6. Audio -->
+    <h2>Listen to Audio</h2>
+    <audio controls>
+        <source src="14-41-56_20250807144439.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- 6. Video -->
+    <h2>Watch This Video</h2>
+    <video width="640" height="480" controls>
+        <source src="Untitled video - Made with Clipchamp.mp4" type="video/mp4">
+    </video>
+
+</body>
+</html>
