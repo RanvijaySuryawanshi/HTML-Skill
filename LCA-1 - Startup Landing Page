@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>LCA-1 - Startup Landing Page</title>
+  <style>
+    /* Import modern font */
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: #f9f9fb;
+      color: #333;
+      line-height: 1.6;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 900px;
+      background: #fff;
+      border-radius: 12px;
+      padding: 40px 50px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    header h1 {
+      font-weight: 600;
+      font-size: 3rem;
+      color: #4a90e2;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      color: #666;
+    }
+
+    section.services {
+      margin-bottom: 50px;
+    }
+
+    section.services h2 {
+      font-weight: 600;
+      color: #222;
+      margin-bottom: 20px;
+      border-bottom: 3px solid #4a90e2;
+      display: inline-block;
+      padding-bottom: 6px;
+    }
+
+    .service-list {
+      display: flex;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+
+    .service-item {
+      background: #f0f5ff;
+      border-radius: 10px;
+      padding: 20px;
+      flex: 1 1 250px;
+      box-shadow: 0 5px 15px rgba(74, 144, 226, 0.2);
+      transition: transform 0.3s ease;
+    }
+
+    .service-item:hover {
+      transform: translateY(-5px);
+    }
+
+    .service-item h3 {
+      margin-bottom: 12px;
+      color: #4a90e2;
+    }
+
+    section.testimonials {
+      margin-bottom: 50px;
+    }
+
+    section.testimonials h2 {
+      font-weight: 600;
+      color: #222;
+      margin-bottom: 20px;
+      border-bottom: 3px solid #4a90e2;
+      display: inline-block;
+      padding-bottom: 6px;
+    }
+
+    .testimonial-list {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .testimonial {
+      background: #e7f0ff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(74, 144, 226, 0.15);
+      font-style: italic;
+      position: relative;
+    }
+
+    .testimonial::before {
+      content: "“";
+      font-size: 3rem;
+      color: #4a90e2;
+      position: absolute;
+      top: 10px;
+      left: 15px;
+      opacity: 0.3;
+    }
+
+    .testimonial p {
+      margin-left: 25px;
+      margin-bottom: 10px;
+    }
+
+    .testimonial-author {
+      font-weight: 600;
+      color: #4a90e2;
+      text-align: right;
+      margin-right: 15px;
+      font-style: normal;
+    }
+
+    .contact-section {
+      text-align: center;
+    }
+
+    .contact-button {
+      background-color: #4a90e2;
+      color: white;
+      padding: 15px 40px;
+      font-size: 1.1rem;
+      font-weight: 600;
+      border: none;
+      border-radius: 50px;
+      cursor: pointer;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+      box-shadow: 0 6px 15px rgba(74, 144, 226, 0.4);
+    }
+
+    .contact-button:hover {
+      background-color: #357abd;
+      transform: scale(1.05);
+      box-shadow: 0 8px 20px rgba(53, 122, 189, 0.6);
+    }
+
+    @media (max-width: 600px) {
+      .service-list {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Ranvijay Studios</h1>
+      <p>Driving Innovation Through Technology</p>
+    </header>
+
+    <section class="services">
+      <h2>Our Services</h2>
+      <div class="service-list">
+        <div class="service-item">
+          <h3>AI Solutions</h3>
+          <p>Custom artificial intelligence solutions to streamline your business processes and unlock new opportunities.</p>
+          <p>Using Open AI With AI Model of SuperAI have Extraordinary Solutions</p>
+        </div>
+        <div class="service-item">
+          <h3>Cloud Integration</h3>
+          <p>Seamlessly integrate cloud technologies to enhance scalability and security for your enterprise.</p>
+          <p>Have one of the best integrate cloud technologies which makes Your Live Easy & Smooth.</p>
+        </div>
+        <div class="service-item">
+          <h3>Product Development</h3>
+          <p>End-to-end product development from concept to launch, tailored to meet your market needs.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonials">
+      <h2>What Our Clients Say</h2>
+      <div class="testimonial-list">
+        <div class="testimonial">
+          <p>Ranvijay Studios transformed our digital presence with their cutting-edge AI tools. Our efficiency has skyrocketed!</p>
+          <div class="testimonial-author">- James.S ., CEO of ChatGPT</div>
+        </div>
+        <div class="testimonial">
+          <p>The cloud integration service was seamless and truly helped our business scale globally. Highly recommended!</p>
+          <div class="testimonial-author">- Sam.R ., CTO of CloudWorks</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-section">
+      <button class="contact-button" herf="file:///C:/Users/poly.lab/Desktop/New%20folder/lca.html">Contact Us</button>
+    </section>
+  </div>
+</body>
+</html>
